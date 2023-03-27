@@ -2,7 +2,7 @@ var students = ['Anna', 'Matt', 'Giovanni', 'Julie', 'Vlad', 'Yoona'];
 var newStudents = ['Leonard', 'Mai', 'Rana', 'Melis'];
 
 //1.1
-//a)
+//a
 students.shift();
 console.log(students);
 
