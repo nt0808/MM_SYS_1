@@ -10,3 +10,34 @@ var course = {
  //a
 delete course.description;
 console.log(course);
+
+//b
+course['room'] = 20;
+console.log(course);
+
+//c
+course['lecturer'] = 'Rose';
+console.log(course);
+
+//d
+arrcourse = Object.entries(course);
+console.log(arrcourse);
+
+//e
+var moreCourseInformations = { 
+    building: 'E12',  
+    students: ['Anna', 'Tim', 'Lukas', 'Julia', 'Lena'] 
+};
+
+course = {...course, ...moreCourseInformations};
+console.log(course);
+
+
+//2.2
+//a
+var library = {  
+    books: {total: 18000, subjects: 193400, digital: 12200}, 
+    cds: {total: 1320, subjects: 2339}, 
+    videos: {total: 9008, subjects: 8273, digital: 1299} 
+}; 
+
