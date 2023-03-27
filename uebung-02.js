@@ -41,3 +41,29 @@ var library = {
     videos: {total: 9008, subjects: 8273, digital: 1299} 
 }; 
 
+console.log(library.books.digital);
+
+//b
+var books = [ 
+    { 
+      title: 'JavaScript for impatient programmers',  
+      isbn: 1091210098,  
+      pages: 526,  
+      language: 'en' 
+    }, 
+    { 
+      title: 'Client Side Scripting: Using JavaScript',  
+      isbn: 9333223878,  
+      pages: 164,  
+      language: 'en' 
+    } 
+ ]; 
+
+
+//c
+var student = { 
+    id: 1391,  
+    firstName: 'Jonas',  
+    lastName: 'Schulz',  
+    major: 'bim' 
+ };  
