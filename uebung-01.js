@@ -32,7 +32,7 @@ var teams = [
 //a)
 function findName(arr, str) {
 	return arr.flat(Infinity).find(element => element === str);
-}
+};
 
 console.log(findName(teams, 'Min'));
 
@@ -40,7 +40,7 @@ console.log(findName(teams, 'Min'));
 function findName2(arr, str) {
     const ind = arr.findIndex(element => element.includes(str));
     return `${ind}: ${arr[ind]}`;
-}
+};
 
 console.log(findName2(teams,'Giulia'));
 
