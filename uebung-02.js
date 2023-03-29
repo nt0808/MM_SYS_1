@@ -59,11 +59,18 @@ var books = [
     } 
  ]; 
 
+console.log(books[1].pages);
 
 //c
 var student = { 
     id: 1391,  
     firstName: 'Jonas',  
     lastName: 'Schulz',  
-    major: 'bim' 
+    major: 'bim',
+    fullName: function() {
+      return this.firstName + " " + this.lastName;
+    }
  };  
+
+var name = student.fullName();
+console.log(name);

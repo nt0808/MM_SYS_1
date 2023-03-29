@@ -52,7 +52,7 @@ function cantineActionDay (day) {
         } else if (day.toLowerCase() === 'friday') {
             text = 'pasta friday';
         } else {
-            text = 'no action'
+            text = 'no action';
         }
     }
     return text;
