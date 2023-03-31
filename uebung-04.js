@@ -1,5 +1,5 @@
-//4.1
-//a
+//Die Übung ist in index.html eingebunden 
+//4.1.a
 document.write('<h1>Titel H1</h1>');
 
 //b
