@@ -1,4 +1,4 @@
-//Die Übung ist in index.html eingebunden
+//Die Übung ist in uebung-4.html eingebunden
 //4.1.a
 var h1 = document.write("<h1>Titel</h1>");
 
