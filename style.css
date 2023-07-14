@@ -1,0 +1,173 @@
+body, h1, h2, h3, p, ul, li {
+    margin: 0;
+    padding: 0;
+}
+
+.section-title {
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+.menu-item {
+    margin-bottom: 40px;
+    display: flex;
+}
+
+.menu-item-image {
+    flex: 0 0 40%;
+    margin-right: 20px;
+}
+
+.menu-item-image img {
+    width: 100%;
+    height: auto;
+}
+
+.menu-item-details {
+    flex: 1;
+}
+
+.menu-item-title {
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+
+.menu-item-description {
+    font-size: 16px;
+    margin-bottom: 10px;
+}
+
+.menu-item-price {
+    font-size: 18px;
+    font-weight: bold;
+}
+
+.popup {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: large;
+    display: none;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 500px;
+    padding: 40px;
+    background-color: #fff;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.2);
+    z-index: 9999;
+}
+
+.popup h2 {
+    margin-top: 0;
+}
+
+.close-btn {
+    position: absolute;
+    font-size:1.7em;
+    top: 12px;
+    right: 20px;
+    cursor: pointer;
+}
+
+.background-container {
+    margin: -8px;
+    position: relative;
+    width: 1920px;
+    height: 1080px;
+    /*background-image: url("café.png");*/
+    background-size: cover;
+    transition: background-image 0.01s ease-in-out;
+}
+
+.seasonal-hover {
+    position: absolute;
+    top: 64px;
+    left: 137px;
+    width: 182px;
+    height: 412px;
+    background-image: url("parfait.png");
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+
+.seasonal-hover:hover {
+    cursor: help;
+    filter: drop-shadow(0 0 30px white);
+}
+
+.coffee-hover {
+    position: absolute;
+    top: 108px;
+    left: 760px;
+    width: 240px;
+    height: 265px;
+    background-image: url("coffee.png");
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+
+.coffee-hover:hover {
+    cursor: help;
+    filter: drop-shadow(0 0 30px white);
+}
+
+.tea-hover {
+    position: absolute;
+    cursor: help;
+    top: 156px;
+    left: 1140px;
+    width: 254px;
+    height: 216px;
+    background-image: url("tea.png");
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+
+.tea-hover:hover {
+    cursor: help;
+    filter: drop-shadow(0 0 30px white);
+}
+
+.beverage-hover {
+    position: absolute;
+    top: 64px;
+    left: 1528px;
+    width: 178px;
+    height: 316px;
+    background-image: url("beverage.png");
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+
+.beverage-hover:hover {
+    cursor: help;
+    filter: drop-shadow(0 0 30px white);
+}
+
+.dessert-hover {
+    position: absolute;
+    cursor: help;
+    top: 455px;
+    left: 916px;
+    width: 929px;
+    height: 612px;
+}
+
+.dessert-hover:hover {
+    box-shadow: 0 0 50px white;
+}
+
+.name-hover {
+    position: absolute;
+    cursor: help;
+    top: 899px;
+    left: 84px;
+    width: 694px;
+    height: 168px;
+}
+
+.name-hover:hover {
+    box-shadow: 0 0 50px white;
+}

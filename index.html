@@ -1,167 +1,81 @@
 <!DOCTYPE html>
 <html>
-  <head>
+
+<head>
     <title>The Little Latte</title>
-    <style>
-      /* Stil für das Pop-up-Fenster */
-      .popup {
-        display: none;
-        position: fixed;
-        top: 50%;
-        left: 50%;
-        transform: translate(-50%, -50%);
-        width: 300px;
-        padding: 20px;
-        background-color: #fff;
-        border: 1px solid #ccc;
-        border-radius: 5px;
-        box-shadow: 0 2px 8px rgba(0, 0, 0, 0.2);
-        z-index: 9999;
-      }
+    <link rel="icon" href="icon.ico" type="image/x-icon" />
+    <link rel="stylesheet" href="style.css" />
+</head>
 
-      .popup h2 {
-        margin-top: 0;
-      }
-
-      .background-container {
-        margin: -8px;
-        position: relative;
-        width: 1920px;
-        height: 1080px;
-        background-image: url("café.png");
-        background-size: cover;
-      }
-
-      .seasonal-hover {
-        position: absolute;
-        top: 64px;
-        left: 137px;
-        width: 182px;
-        height: 412px;
-        background-image: url("parfait.png");
-        background-size: contain;
-        background-repeat: no-repeat;
-      }
-
-      .seasonal-hover:hover {
-        cursor: help;
-        filter: drop-shadow(0 0 20px white);
-      }
-
-      .coffee-hover {
-        position: absolute;
-        top: 108px;
-        left: 760px;
-        width: 240px;
-        height: 426px;
-        background-image: url("coffee.png");
-        background-size: contain;
-        background-repeat: no-repeat;
-      }
-
-      .coffee-hover:hover {
-        cursor: help;
-        filter: drop-shadow(0 0 20px white);
-      }
-
-      .tea-hover {
-        position: absolute;
-        cursor: help;
-        top: 156px;
-        left: 1140px;
-        width: 254px;
-        height: 216px;
-        background-image: url("tea.png");
-        background-size: contain;
-        background-repeat: no-repeat;
-      }
-
-      .tea-hover:hover {
-        cursor: help;
-        filter: drop-shadow(0 0 20px white);
-      }
-
-      .beverage-hover {
-        position: absolute;
-        top: 64px;
-        left: 1528px;
-        width: 178px;
-        height: 316px;
-        background-image: url("beverage.png");
-        background-size: contain;
-        background-repeat: no-repeat;
-      }
-
-      .beverage-hover:hover {
-        cursor: help;
-        filter: drop-shadow(0 0 20px white);
-      }
-
-      .dessert-hover {
-        position: absolute;
-        cursor: help;
-        top: 455px;
-        left: 916px;
-        width: 929px;
-        height: 612px;
-      }
-
-      .dessert-hover:hover {
-        box-shadow: 0 0 50px pink;
-      }
-
-      .name-hover {
-        position: absolute;
-        cursor: help;
-        top: 899px;
-        left: 84px;
-        width: 694px;
-        height: 168px;
-      }
-
-      .name-hover:hover {
-        box-shadow: 0 0 50px white;
-      }
-    </style>
-  </head>
-  <body>
+<body>
     <div class="background-container">
-      <!-- Anklickbare Flächen hinzu -->
-      <div class="seasonal-hover" onclick="openMenu('seasonal')"></div>
-      <div class="coffee-hover" onclick="openMenu('coffee')"></div>
-      <div class="tea-hover" onclick="openMenu('tea')"></div>
-      <div class="beverage-hover" onclick="openMenu('beverage')"></div>
-      <div class="dessert-hover" onclick="openMenu('dessert')"></div>
-      <div class="name-hover" onclick="openMenu('name')"></div>
+        <!-- Anklickbare Flächen hinzu -->
+        <div class="seasonal-hover" onclick="openMenuPopup('seasonal')"></div>
+        <div class="coffee-hover" onclick="openMenuPopup('coffee')"></div>
+        <div class="tea-hover" onclick="openMenuPopup('tea')"></div>
+        <div class="beverage-hover" onclick="openMenuPopup('beverage')"></div>
+        <div class="dessert-hover" onclick="openMenuPopup('dessert')"></div>
+        <div class="name-hover" onclick="openMenuPopup('name')"></div>
     </div>
 
-    <div id="menuPopup" class="popup">
-      <h2>Speisekarte</h2>
-      <p id="seasonal">1. Gericht 1</p>
-      <p id="coffee">2. Gericht 2</p>
-      <p id="tea">3. Gericht 3</p>
-      <!-- Fügen Sie hier weitere Gerichte hinzu -->
-      <button onclick="closeMenu()">Schließen</button>
+    <div id="seasonal" class="popup">
+        <h2>Speisekarte</h2>
+        <p>Hier ist die Speisekarte für das ausgewählte Gericht.</p>
+        <span class="close-btn" onclick="closeMenuPopup('seasonal')">&#10005;</span>
     </div>
 
-    <script>
-      function openMenu(menuItem) {
-        var popup = document.getElementById("menuPopup");
-        var menu = document.getElementById(menuItem);
-        if (menu) {
-          menu.style.display = "block";
-          popup.style.display = "block";
-        }
-      }
+    <div id="coffee" class="popup">
+        <h1 class="section-title">Our Menu</h2>
 
-      function closeMenu() {
-        var popup = document.getElementById("menuPopup");
-        var menuItems = popup.getElementsByTagName("p");
-        for (var i = 0; i < menuItems.length; i++) {
-          menuItems[i].style.display = "none";
-        }
-        popup.style.display = "none";
-      }
-    </script>
-  </body>
+        <div class="menu-item">
+            <div class="menu-item-image">
+                <img src="menu-item1.jpg" alt="Espresso" />
+            </div>
+            <div class="menu-item-details">
+                <h2 class="menu-item-title">Espresso</h2>
+                <p class="menu-item-description">Powerful and energizing kickstart</p>
+                <p class="menu-item-price">$2</p>
+            </div>
+        </div>
+
+        <div class="menu-item">
+            <div class="menu-item-image">
+                <img src="menu-item2.jpg" alt="Cappuccino" />
+            </div>
+            <div class="menu-item-details">
+                <h2 class="menu-item-title">Cappuccino</h2>
+                <p class="menu-item-description">Delightful harmony of espresso, velvety milk, and fluffy foam</p>
+                <p class="menu-item-price">$3</p>
+            </div>
+        </div>
+        <span class="close-btn" onclick="closeMenuPopup('coffee')">&#10005;</span>
+    </div>
+
+    <div id="tea" class="popup">
+        <h2>Speisekarte</h2>
+        <p>Hier ist die Speisekarte für das ausgewählte Gericht.</p>
+        <span class="close-btn" onclick="closeMenuPopup('tea')">&#10005;</span>
+    </div>
+
+    <div id="beverage" class="popup">
+        <h2>Speisekarte</h2>
+        <p>Hier ist die Speisekarte für das ausgewählte Gericht.</p>
+        <span class="close-btn" onclick="closeMenuPopup('beverage')">&#10005;</span>
+    </div>
+
+    <div id="dessert" class="popup">
+        <h2>Speisekarte</h2>
+        <p>Hier ist die Speisekarte für das ausgewählte Gericht.</p>
+        <span class="close-btn" onclick="closeMenuPopup('dessert')">&#10005;</span>
+    </div>
+
+    <div id="name" class="popup">
+        <h2>Speisekarte</h2>
+        <p>Hier ist die Speisekarte für das ausgewählte Gericht.</p>
+        <span class="close-btn" onclick="closeMenuPopup('name')">&#10005;</span>
+    </div>
+
+    <script src="index.js"></script>
+</body>
+
 </html>
