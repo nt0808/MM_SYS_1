@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <title>Interaktives Café</title>
+    <title>The Little Latte</title>
     <style>
       /* Stil für das Pop-up-Fenster */
       .popup {
@@ -24,40 +24,122 @@
       }
 
       .background-container {
+        margin: -8px;
         position: relative;
-        width: 800px; /* Anpassen der Breite an Ihr Hintergrundbild */
-        height: 600px; /* Anpassen der Höhe an Ihr Hintergrundbild */
-        background-image: url("hintergrundbild.jpg"); /* Pfad zu Ihrem Hintergrundbild */
+        width: 1920px;
+        height: 1080px;
+        background-image: url("café.png");
         background-size: cover;
       }
 
-      .clickable-area {
+      .seasonal-hover {
         position: absolute;
-        cursor: pointer;
-        /* Fügen Sie hier die Position und die Dimensionen der anklickbaren Fläche hinzu */
-        /* Zum Beispiel: */
-        /* top: 100px; */
-        /* left: 200px; */
-        /* width: 150px; */
-        /* height: 80px; */
+        top: 64px;
+        left: 137px;
+        width: 182px;
+        height: 412px;
+        background-image: url("parfait.png");
+        background-size: contain;
+        background-repeat: no-repeat;
+      }
+
+      .seasonal-hover:hover {
+        cursor: help;
+        filter: drop-shadow(0 0 20px white);
+      }
+
+      .coffee-hover {
+        position: absolute;
+        top: 108px;
+        left: 760px;
+        width: 240px;
+        height: 426px;
+        background-image: url("coffee.png");
+        background-size: contain;
+        background-repeat: no-repeat;
+      }
+
+      .coffee-hover:hover {
+        cursor: help;
+        filter: drop-shadow(0 0 20px white);
+      }
+
+      .tea-hover {
+        position: absolute;
+        cursor: help;
+        top: 156px;
+        left: 1140px;
+        width: 254px;
+        height: 216px;
+        background-image: url("tea.png");
+        background-size: contain;
+        background-repeat: no-repeat;
+      }
+
+      .tea-hover:hover {
+        cursor: help;
+        filter: drop-shadow(0 0 20px white);
+      }
+
+      .beverage-hover {
+        position: absolute;
+        top: 64px;
+        left: 1528px;
+        width: 178px;
+        height: 316px;
+        background-image: url("beverage.png");
+        background-size: contain;
+        background-repeat: no-repeat;
+      }
+
+      .beverage-hover:hover {
+        cursor: help;
+        filter: drop-shadow(0 0 20px white);
+      }
+
+      .dessert-hover {
+        position: absolute;
+        cursor: help;
+        top: 455px;
+        left: 916px;
+        width: 929px;
+        height: 612px;
+      }
+
+      .dessert-hover:hover {
+        box-shadow: 0 0 50px pink;
+      }
+
+      .name-hover {
+        position: absolute;
+        cursor: help;
+        top: 899px;
+        left: 84px;
+        width: 694px;
+        height: 168px;
+      }
+
+      .name-hover:hover {
+        box-shadow: 0 0 50px white;
       }
     </style>
   </head>
   <body>
-    <h1>Willkommen im Interaktiven Café</h1>
-
     <div class="background-container">
-      <div class="clickable-area" onclick="openMenu('gericht1')"></div>
-      <div class="clickable-area" onclick="openMenu('gericht2')"></div>
-      <div class="clickable-area" onclick="openMenu('gericht3')"></div>
-      <!-- Fügen Sie hier weitere anklickbare Flächen hinzu -->
+      <!-- Anklickbare Flächen hinzu -->
+      <div class="seasonal-hover" onclick="openMenu('seasonal')"></div>
+      <div class="coffee-hover" onclick="openMenu('coffee')"></div>
+      <div class="tea-hover" onclick="openMenu('tea')"></div>
+      <div class="beverage-hover" onclick="openMenu('beverage')"></div>
+      <div class="dessert-hover" onclick="openMenu('dessert')"></div>
+      <div class="name-hover" onclick="openMenu('name')"></div>
     </div>
 
     <div id="menuPopup" class="popup">
       <h2>Speisekarte</h2>
-      <p id="gericht1">1. Gericht 1</p>
-      <p id="gericht2">2. Gericht 2</p>
-      <p id="gericht3">3. Gericht 3</p>
+      <p id="seasonal">1. Gericht 1</p>
+      <p id="coffee">2. Gericht 2</p>
+      <p id="tea">3. Gericht 3</p>
       <!-- Fügen Sie hier weitere Gerichte hinzu -->
       <button onclick="closeMenu()">Schließen</button>
     </div>
