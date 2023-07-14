@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Interaktives Café</title>
+    <style>
+        /* Stil für das Pop-up-Fenster */
+        .popup {
+            display: none;
+            position: fixed;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            width: 300px;
+            padding: 20px;
+            background-color: #fff;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            box-shadow: 0 2px 8px rgba(0, 0, 0, 0.2);
+            z-index: 9999;
+        }
+        
+        .popup h2 {
+            margin-top: 0;
+        }
+    </style>
+</head>
+<body>
+    <h1>Willkommen im Interaktiven Café</h1>
+    
+    <p>Klicken Sie auf die Elemente, um die Speisekarte anzuzeigen:</p>
+    
+    <ul>
+        <li><a href="#" onclick="openMenu('gericht1')">Gericht 1</a></li>
+        <li><a href="#" onclick="openMenu('gericht2')">Gericht 2</a></li>
+        <li><a href="#" onclick="openMenu('gericht3')">Gericht 3</a></li>
+    </ul>
+    
+    <div id="menuPopup" class="popup">
+        <h2>Speisekarte</h2>
+        <p id="gericht1">1. Gericht 1</p>
+        <p id="gericht2">2. Gericht 2</p>
+        <p id="gericht3">3. Gericht 3</p>
+        <!-- Fügen Sie hier weitere Gerichte hinzu -->
+        <button onclick="closeMenu()">Schließen</button>
+    </div>
+    
+    <script>
+        function openMenu(menuItem) {
+            var popup = document.getElementById("menuPopup");
+            var menu = document.getElementById(menuItem);
+            if (menu) {
+                menu.style.display = "block";
+                popup.style.display = "block";
+            }
+        }
+        
+        function closeMenu() {
+            var popup = document.getElementById("menuPopup");
+            var menuItems = popup.getElementsByTagName("p");
+            for (var i = 0; i < menuItems.length; i++) {
+                menuItems[i].style.display = "none";
+            }
+            popup.style.display = "none";
+        }
+    </script>
+</body>
+</html>
