@@ -21,6 +21,7 @@ li {
 
 .section-title {
     font-family: 'Coffee+Tea';
+    font-size: 40px;
     text-align: left;
     margin-bottom: 40px;
 }
@@ -47,25 +48,31 @@ li {
     flex: 1;
 }
 
+.menu-container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr); /* Adjust the number of columns as needed */
+    gap: 250px; /* Adjust the gap between menu items as needed */
+}
+
 .menu-item-title {
     font-family: 'Love';
     font-size: 24px;
-    margin-bottom: 12px;
+    margin-bottom: 16px;
 }
 
 .menu-item-description {
-    font-size: 16px;
+    font-family: Georgia;
+    font-size: 18px;
     margin-bottom: 12px;
 }
 
 .menu-item-price {
+    font-family: "Love";
     font-size: 18px;
     font-weight: bold;
 }
 
 .popup {
-    font-family: 'Coffee+Tea';
-    font-size: large;
     display: none;
     position: absolute;
     top: 50%;
@@ -88,7 +95,7 @@ li {
 }
 
 .close-btn {
-    position: absolute;
+    position: fixed;
     font-size: 2em;
     top: 12px;
     right: 20px;
