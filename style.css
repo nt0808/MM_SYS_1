@@ -1,3 +1,4 @@
+/*Einbinden von lokalen Fonts*/
 @font-face {
     font-family: 'Coffee+Tea';
     src: url('coffee+teademo-Regular.ttf') format('truetype');
@@ -6,6 +7,11 @@
 @font-face {
     font-family: 'Love';
     src: url('Love.ttf') format('truetype');
+}
+
+@font-face {
+    font-family: 'Open Sans';
+    src: url('OpenSans-VariableFont_wdth,wght.ttf') format('truetype');
 }
 
 body,
@@ -19,13 +25,16 @@ li {
     padding: 0;
 }
 
+/*Titel des Pop-Up*/
 .section-title {
     font-family: 'Coffee+Tea';
     font-size: 40px;
     text-align: left;
+    margin-top: 12px;
     margin-bottom: 40px;
 }
 
+/*Div-Container einer Speise/Getränks (Bild + Text)*/
 .menu-item {
     margin-bottom: 40px;
     display: flex;
@@ -33,45 +42,62 @@ li {
     align-items: center;
 }
 
-.menu-item-image {
+/*Bilder in den Pop-Ups*/
+.menu-item-image, .item-image {
     flex: 0 0 100%;
     max-width: 120px;
     margin-right: 40px;
+    margin-bottom: 12px;
 }
 
+/*Bilder für die Speisekarte sind rund*/
 .menu-item-image img {
+    width: 100%;
+    height: auto;
+    border-radius: 50%;
+}
+
+/*Bilder für Öffnungszeiten/Kontakt sind quadratförmig*/
+.item-image img {
     width: 100%;
     height: auto;
 }
 
+/**/
 .menu-item-details {
     flex: 1;
 }
 
+/**/
 .menu-container {
     display: grid;
-    grid-template-columns: repeat(2, 1fr); /* Adjust the number of columns as needed */
-    gap: 250px; /* Adjust the gap between menu items as needed */
+    grid-template-columns: repeat(2, 1fr);
+    gap: 100px;
 }
 
+/**/
 .menu-item-title {
     font-family: 'Love';
     font-size: 24px;
     margin-bottom: 16px;
 }
 
+/**/
 .menu-item-description {
-    font-family: Georgia;
+    font-family: 'Open Sans';
     font-size: 18px;
     margin-bottom: 12px;
 }
 
+/**/
 .menu-item-price {
-    font-family: "Love";
-    font-size: 18px;
+    font-family: 'Love';
+    font-size: 20px;
     font-weight: bold;
-}
+    text-align: right;
+} 
 
+/**/
 .popup {
     display: none;
     position: absolute;
@@ -90,27 +116,26 @@ li {
     z-index: 9999;
 }
 
-.popup h2 {
-    margin-top: 0;
-}
-
+/*Button zum Schließen des Pop-Ups*/
 .close-btn {
-    position: fixed;
+    position: sticky;
+    top: 0;
+    right: 0;
+    float: right;
     font-size: 2em;
-    top: 12px;
-    right: 20px;
     cursor: pointer;
 }
 
+/**/
 .background-container {
     position: relative;
     width: 100%;
     padding-bottom: 56.25%;
-    background-image: url("café.png");
     transition: background-image 0.01s ease-in-out;
     background-size: cover;
 }
 
+/**/
 .hover-area,
 .hover-area-box {
     position: absolute;
@@ -119,16 +144,19 @@ li {
     transition: filter 0.1s;
 }
 
+/**/
 .hover-area:hover {
     cursor: help;
     filter: drop-shadow(0 0 32px rgb(255, 255, 255));
 }
 
+/**/
 .hover-area-box:hover {
     cursor: help;
     box-shadow: 0 0 28px rgb(230, 139, 139);
 }
 
+/**/
 .seasonal-hover {
     top: 6%;
     left: 7%;
@@ -137,6 +165,7 @@ li {
     background-image: url("parfait.png");
 }
 
+/**/
 .coffee-hover {
     top: 10%;
     left: 40%;
@@ -145,6 +174,7 @@ li {
     background-image: url("coffee.png");
 }
 
+/**/
 .tea-hover {
     top: 14%;
     left: 59%;
@@ -153,6 +183,7 @@ li {
     background-image: url("tea.png");
 }
 
+/**/
 .beverage-hover {
     top: 7%;
     left: 79%;
@@ -161,6 +192,7 @@ li {
     background-image: url("beverage.png");
 }
 
+/**/
 .dessert-hover {
     top: 42%;
     left: 47.7%;
@@ -168,6 +200,7 @@ li {
     height: 56.7%;
 }
 
+/**/
 .name-hover {
     top: 83.2%;
     left: 4.4%;

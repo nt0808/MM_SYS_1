@@ -27,7 +27,7 @@ function openMenuPopup(popupId) {
   popup.style.display = "block";
 }
 
-function closeMenuPopup( popupId) {
+function closeMenuPopup(popupId) {
   var popup = document.getElementById(popupId);
   popup.style.display = "none";
 }
