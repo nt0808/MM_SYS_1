@@ -10,71 +10,158 @@
 <body>
     <div class="background-container">
         <!-- Anklickbare Flächen hinzu -->
-        <div class="seasonal-hover" onclick="openMenuPopup('seasonal')"></div>
-        <div class="coffee-hover" onclick="openMenuPopup('coffee')"></div>
-        <div class="tea-hover" onclick="openMenuPopup('tea')"></div>
-        <div class="beverage-hover" onclick="openMenuPopup('beverage')"></div>
-        <div class="dessert-hover" onclick="openMenuPopup('dessert')"></div>
-        <div class="name-hover" onclick="openMenuPopup('name')"></div>
+        <div class="hover-area seasonal-hover" onclick="openMenuPopup('seasonal')"></div>
+        <div class="hover-area coffee-hover" onclick="openMenuPopup('coffee')"></div>
+        <div class="hover-area tea-hover" onclick="openMenuPopup('tea')"></div>
+        <div class="hover-area beverage-hover" onclick="openMenuPopup('beverage')"></div>
+        <div class="hover-area-box dessert-hover" onclick="openMenuPopup('dessert')"></div>
+        <div class="hover-area-box name-hover" onclick="openMenuPopup('name')"></div>
     </div>
 
     <div id="seasonal" class="popup">
-        <h2>Speisekarte</h2>
-        <p>Hier ist die Speisekarte für das ausgewählte Gericht.</p>
+        <h1 class="section-title">Seasonal Menu</h1>
+        <div class="menu-item">
+            <div class="menu-item-image">
+                <img src="https://lovefoodfeed.com/wp-content/uploads/2022/09/Espresso-with-chocolate-750-wp.webp"
+                    alt="Espresso" />
+            </div>
+            <div class="menu-item-details">
+                <h2 class="menu-item-title">Espresso</h2>
+                <p class="menu-item-description">Powerful and energizing kickstart</p>
+                <p class="menu-item-price">$3</p>
+            </div>
+        </div>
         <span class="close-btn" onclick="closeMenuPopup('seasonal')">&#10005;</span>
     </div>
 
     <div id="coffee" class="popup">
-        <h1 class="section-title">Our Menu</h2>
-            <div class="menu-item">
-                <div class="menu-item-image">
-                    <img src="menu-item1.jpg" alt="Espresso" />
-                </div>
-                <div class="menu-item-details">
-                    <h2 class="menu-item-title">Espresso</h2>
-                    <p class="menu-item-description">Powerful and energizing kickstart</p>
-                    <p class="menu-item-price">$2</p>
-                </div>
+        <h1 class="section-title">Coffee Menu</h1>
+        <div class="menu-item">
+            <div class="menu-item-image">
+                <img src="https://lovefoodfeed.com/wp-content/uploads/2022/09/Espresso-with-chocolate-750-wp.webp"
+                    alt="Espresso" />
             </div>
-
-            <div class="menu-item">
-                <div class="menu-item-image">
-                    <img src="menu-item2.jpg" alt="Cappuccino" />
-                </div>
-                <div class="menu-item-details">
-                    <h2 class="menu-item-title">Cappuccino</h2>
-                    <p class="menu-item-description">Delightful harmony of espresso, velvety milk, and fluffy foam</p>
-                    <p class="menu-item-price">$3</p>
-                </div>
+            <div class="menu-item-details">
+                <h2 class="menu-item-title">Espresso</h2>
+                <p class="menu-item-description">Powerful and energizing kickstart</p>
+                <p class="menu-item-price">$3</p>
             </div>
-            <span class="close-btn" onclick="closeMenuPopup('coffee')">&#10005;</span>
+        </div>
 
+        <div class="menu-item">
+            <div class="menu-item-image">
+                <img src="menu-item2.jpg" alt="Cappuccino" />
+            </div>
+            <div class="menu-item-details">
+                <h2 class="menu-item-title">Cappuccino</h2>
+                <p class="menu-item-description">
+                    Delightful harmony of espresso, velvety milk, and fluffy foam
+                </p>
+                <p class="menu-item-price">$4</p>
+            </div>
+        </div>
+
+        <div class="menu-item">
+            <div class="menu-item-image">
+                <img src="menu-item2.jpg" alt="Cappuccino" />
+            </div>
+            <div class="menu-item-details">
+                <h2 class="menu-item-title">Cappuccino</h2>
+                <p class="menu-item-description">
+                    Delightful harmony of espresso, velvety milk, and fluffy foam
+                </p>
+                <p class="menu-item-price">$4</p>
+            </div>
+        </div>
+
+        <div class="menu-item">
+            <div class="menu-item-image">
+                <img src="menu-item2.jpg" alt="Cappuccino" />
+            </div>
+            <div class="menu-item-details">
+                <h2 class="menu-item-title">Cappuccino</h2>
+                <p class="menu-item-description">
+                    Delightful harmony of espresso, velvety milk, and fluffy foam
+                </p>
+                <p class="menu-item-price">$4</p>
+            </div>
+        </div>
+
+        <div class="menu-item">
+            <div class="menu-item-image">
+                <img src="menu-item2.jpg" alt="Cappuccino" />
+            </div>
+            <div class="menu-item-details">
+                <h2 class="menu-item-title">Cappuccino</h2>
+                <p class="menu-item-description">
+                    Delightful harmony of espresso, velvety milk, and fluffy foam
+                </p>
+                <p class="menu-item-price">$4</p>
+            </div>
+        </div>
+
+        <div class="menu-item">
+            <div class="menu-item-image">
+                <img src="menu-item2.jpg" alt="Cappuccino" />
+            </div>
+            <div class="menu-item-details">
+                <h2 class="menu-item-title">Cappuccino</h2>
+                <p class="menu-item-description">
+                    Delightful harmony of espresso, velvety milk, and fluffy foam
+                </p>
+                <p class="menu-item-price">$4</p>
+            </div>
+        </div>
+
+        <div class="menu-item">
+            <div class="menu-item-image">
+                <img src="menu-item2.jpg" alt="Cappuccino" />
+            </div>
+            <div class="menu-item-details">
+                <h2 class="menu-item-title">Cappuccino</h2>
+                <p class="menu-item-description">
+                    Delightful harmony of espresso, velvety milk, and fluffy foam
+                </p>
+                <p class="menu-item-price">$4</p>
+            </div>
+        </div>
+        <span class="close-btn" onclick="closeMenuPopup('coffee')">&#10005;</span>
     </div>
 
     <div id="tea" class="popup">
-        <h2>Speisekarte</h2>
+        <h1 class="section-title">Tea Menu</h1>
         <p>Hier ist die Speisekarte für das ausgewählte Gericht.</p>
         <span class="close-btn" onclick="closeMenuPopup('tea')">&#10005;</span>
     </div>
 
     <div id="beverage" class="popup">
-        <h2>Speisekarte</h2>
+        <h1 class="section-title">Beverage Menu</h1>
         <p>Hier ist die Speisekarte für das ausgewählte Gericht.</p>
         <span class="close-btn" onclick="closeMenuPopup('beverage')">&#10005;</span>
     </div>
 
     <div id="dessert" class="popup">
-        <h2>Speisekarte</h2>
+        <h1 class="section-title">Dessert Menu</h1>
         <p>Hier ist die Speisekarte für das ausgewählte Gericht.</p>
         <span class="close-btn" onclick="closeMenuPopup('dessert')">&#10005;</span>
     </div>
 
     <div id="name" class="popup">
-        <h2>Speisekarte</h2>
-        <p>Hier ist die Speisekarte für das ausgewählte Gericht.</p>
+        <h1 class="section-title">Contact and Opening Hours</h1>
+        <div class="menu-item">
+            <div class="menu-item-image">
+                <img src="icon.png" alt="Espresso" />
+            </div>
+            <div class="menu-item-details">
+                <h2 class="menu-item-title">The Little Latte</h2>
+                <p class="menu-item-description">1234 Ocean Avenue</p>
+                <p class="menu-item-description">Seaside City, Fictionland </p>
+                <p class="menu-item-description">&#9990; +01 234567890</p>
+                <p class="menu-item-description">&#128231; thelittlelatte.cafe@example.com</p>
+            </div>
+        </div>
         <span class="close-btn" onclick="closeMenuPopup('name')">&#10005;</span>
     </div>
-
     <script src="index.js"></script>
 </body>
 
