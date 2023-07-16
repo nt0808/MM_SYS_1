@@ -1,0 +1,60 @@
+{
+  "menuItems": [
+    {
+      "title": "Espresso",
+      "price": "$3",
+      "description": "Powerful and energizing kickstart",
+      "image": "https://lovefoodfeed.com/wp-content/uploads/2022/09/Espresso-with-chocolate-750-wp.webp"
+    },
+    {
+      "title": "Cappuccino",
+      "price": "$4",
+      "description": "Delightful harmony of espresso, velvety milk, and fluffy foam",
+      "image": "https://www.hr4.de/cappuccino_01_bamboo-2179028_1920_pixabay-100~_t-1549382285152_v-1to1__large.jpg"
+    },
+    {
+      "title": "Cafe Latte",
+      "price": "$4.50",
+      "description": "Creamy dance of espresso and silky steamed milk",
+      "image": "https://cdn7.kiwilimonrecipes.com/recetaimagen/36986/640x640/46349.jpg.webp"
+    },
+    {
+      "title": "Latte Macchiato",
+      "price": "$5",
+      "description": "Elegant spectacle of layered milk, espresso, and frothy bliss",
+      "image": "https://www.springlane.de/magazin/wp-content/uploads/2013/11/Latte-Macchiato_452_featured.jpg"
+    },
+    {
+      "title": "Flat White",
+      "price": "$5",
+      "description": "Smooth symphony of double espresso and perfectly textured milk",
+      "image": "https://images.immediate.co.uk/production/volatile/sites/30/2020/08/flat-white-d8ada0f.jpg"
+    },
+    {
+      "title": "Americano",
+      "price": "$3",
+      "description": "Revitalizing fusion of espresso and invigorating hot water",
+      "image": "https://saki.us/cdn/shop/articles/20230113070552-caffe-americano-blog_1200x1200.webp?v=1686044155"
+    },
+    {
+      "title": "Mocha",
+      "price": "$5",
+      "description": "Decadent affair of espresso, luscious milk, and indulgent chocolate",
+      "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/7/7e/Mocha_coffee.jpg/800px-Mocha_coffee.jpg"
+    },
+    {
+      "title": "Irish Coffee",
+      "price": "$6.50",
+      "description": "Spirited blend of coffee, whiskey, and creamy enchantment",
+      "image": "https://image.essen-und-trinken.de/11952506/t/TV/v10/w960/r1/-/irish-coffee-jpg--65164-.jpg"
+    },
+    {
+      "title": "Frappe",
+      "price": "$5",
+      "description": "Refreshing whirlwind of chilled coffee and frothy delight",
+      "image": "https://nationaltoday.com/wp-content/uploads/2020/10/Frappe.jpg"
+    }
+  ]
+}
+
+

@@ -1,0 +1,52 @@
+{
+    "menuItems": [
+      {
+        "title": "Matcha Latte",
+        "price": "$5",
+        "description": "Joyful dance of vibrant matcha and creamy milk",
+        "image": "https://thebusybaker.ca/wp-content/uploads/2019/02/better-than-starbucks-matcha-latte-fb-ig-3.jpg"
+      },
+      {
+        "title": "Earl Grey",
+        "price": "$4",
+        "description": "Blend of fragrant black tea infused with the citrusy essence of bergamot",
+        "image": "https://artfultea.com/cdn/shop/products/BF_2B-_2BEarl_2BGrey_2BLavender_2B_28cup_29.JPG?v=1668027058"
+      },
+      {
+        "title": "Darjeeling",
+        "price": "$5",
+        "description": "Cup of delicate black tea from the picturesque Darjeeling region",
+        "image": "https://straitscoffee.com/wp-content/uploads/2012/12/23-DO-cup-800x800jpg.jpg"
+      },
+      {
+        "title": "Oolong",
+        "price": "$5",
+        "description": "Brew of partially oxidized tea leaves, a harmonious balance of floral and fruity flavors",
+        "image": "https://artfultea.com/cdn/shop/products/O_2B-_2BMilk_2BOolong_2B_28gaiwan_29.jpg?v=1683605922&width=1946"
+      },
+      {
+        "title": "Lemon",
+        "price": "$4",
+        "description": "Zesty infusion of bright lemon",
+        "image": "https://www.cubesnjuliennes.com/wp-content/uploads/2023/02/Lemon-Ginger-Tea-Recipe.jpg"
+      },
+      {
+        "title": "Chamomile",
+        "price": "$4",
+        "description": "Calming herbal tea infused with soothing chamomile flowers",
+        "image": "https://images.immediate.co.uk/production/volatile/sites/30/2020/06/Chamomile-tea-in-a-tea-cup-61063da.jpg"
+      },
+      {
+        "title": "Peppermint",
+        "price": "$4",
+        "description": "Blend of refreshing peppermint leaves",
+        "image": "https://minimalistbaker.com/wp-content/uploads/2023/02/Mint-Tea-SQUARE.jpg"
+      },
+      {
+        "title": "Rooibos",
+        "price": "$5",
+        "description": "South African herbal tea known for its rich, earthy flavors and delightful natural sweetness",
+        "image": "https://www.oekotest.de/static_files/images/article/Nur-drei-Rooibostees-im-Test-sind-empfehlenswert-_GreenArt-Shutterstock_108598_1x1.jpg"
+      }
+    ]
+}

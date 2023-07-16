@@ -35,16 +35,63 @@ function closeMenuPopup(popupId) {
   popup.style.display = "none";
 }
 
-// Function to load and process JSON data
-function loadCoffeeMenu() {
-  // Fetch the JSON file
-  fetch("coffee-menu.json")
+// Funktion, um die saisonale Karte JSON Datei zu laden
+function loadSeasonalMenu() {
+  fetch("json/seasonal-menu.json")
     .then((response) => response.json())
     .then((data) => {
-      // Get the coffee menu container
+      const coffeeMenuContainer = document.getElementById("seasonal");
+
+      data.menuItems.forEach((menuItem) => {
+        const menuItemElement = document.createElement("div");
+        menuItemElement.classList.add("menu-item");
+
+        const menuItemImage = document.createElement("div");
+        menuItemImage.classList.add("menu-item-image");
+        const img = document.createElement("img");
+        img.src = menuItem.image;
+        img.alt = menuItem.title;
+        menuItemImage.appendChild(img);
+        menuItemElement.appendChild(menuItemImage);
+
+        const menuItemDetails = document.createElement("div");
+        menuItemDetails.classList.add("menu-item-details");
+        const menuContainer = document.createElement("div");
+        menuContainer.classList.add("menu-container");
+        const titleElement = document.createElement("h2");
+        titleElement.classList.add("menu-item-title");
+        titleElement.textContent = menuItem.title;
+        const priceElement = document.createElement("span");
+        priceElement.classList.add("menu-item-price");
+        priceElement.textContent = menuItem.price;
+        menuContainer.appendChild(titleElement);
+        menuContainer.appendChild(priceElement);
+        menuItemDetails.appendChild(menuContainer);
+
+        const descriptionElement = document.createElement("p");
+        descriptionElement.classList.add("menu-item-description");
+        descriptionElement.textContent = menuItem.description;
+        menuItemDetails.appendChild(descriptionElement);
+
+        menuItemElement.appendChild(menuItemDetails);
+
+        coffeeMenuContainer.appendChild(menuItemElement);
+      });
+    })
+    .catch((error) => {
+      console.log("Error loading seasonal menu:", error);
+    });
+}
+
+loadSeasonalMenu();
+
+// Funktion, um die Kaffesorten JSON Datei zu laden
+function loadCoffeeMenu() {
+  fetch("json/coffee-menu.json")
+    .then((response) => response.json())
+    .then((data) => {
       const coffeeMenuContainer = document.getElementById("coffee");
 
-      // Loop through the menu items and create the HTML elements dynamically
       data.menuItems.forEach((menuItem) => {
         const menuItemElement = document.createElement("div");
         menuItemElement.classList.add("menu-item");
@@ -86,5 +133,154 @@ function loadCoffeeMenu() {
     });
 }
 
-// Call the function to load the coffee menu
 loadCoffeeMenu();
+
+// Funktion, um die Teesorten JSON Datei zu laden
+function loadTeaMenu() {
+  fetch("json/tea-menu.json")
+    .then((response) => response.json())
+    .then((data) => {
+      const coffeeMenuContainer = document.getElementById("tea");
+
+      data.menuItems.forEach((menuItem) => {
+        const menuItemElement = document.createElement("div");
+        menuItemElement.classList.add("menu-item");
+
+        const menuItemImage = document.createElement("div");
+        menuItemImage.classList.add("menu-item-image");
+        const img = document.createElement("img");
+        img.src = menuItem.image;
+        img.alt = menuItem.title;
+        menuItemImage.appendChild(img);
+        menuItemElement.appendChild(menuItemImage);
+
+        const menuItemDetails = document.createElement("div");
+        menuItemDetails.classList.add("menu-item-details");
+        const menuContainer = document.createElement("div");
+        menuContainer.classList.add("menu-container");
+        const titleElement = document.createElement("h2");
+        titleElement.classList.add("menu-item-title");
+        titleElement.textContent = menuItem.title;
+        const priceElement = document.createElement("span");
+        priceElement.classList.add("menu-item-price");
+        priceElement.textContent = menuItem.price;
+        menuContainer.appendChild(titleElement);
+        menuContainer.appendChild(priceElement);
+        menuItemDetails.appendChild(menuContainer);
+
+        const descriptionElement = document.createElement("p");
+        descriptionElement.classList.add("menu-item-description");
+        descriptionElement.textContent = menuItem.description;
+        menuItemDetails.appendChild(descriptionElement);
+
+        menuItemElement.appendChild(menuItemDetails);
+
+        coffeeMenuContainer.appendChild(menuItemElement);
+      });
+    })
+    .catch((error) => {
+      console.log("Error loading tea menu:", error);
+    });
+}
+
+loadTeaMenu();
+
+// Funktion, um die Getränkesorten JSON Datei zu laden
+function loadBeverageMenu() {
+  fetch("json/beverage-menu.json")
+    .then((response) => response.json())
+    .then((data) => {
+      const coffeeMenuContainer = document.getElementById("beverage");
+
+      data.menuItems.forEach((menuItem) => {
+        const menuItemElement = document.createElement("div");
+        menuItemElement.classList.add("menu-item");
+
+        const menuItemImage = document.createElement("div");
+        menuItemImage.classList.add("menu-item-image");
+        const img = document.createElement("img");
+        img.src = menuItem.image;
+        img.alt = menuItem.title;
+        menuItemImage.appendChild(img);
+        menuItemElement.appendChild(menuItemImage);
+
+        const menuItemDetails = document.createElement("div");
+        menuItemDetails.classList.add("menu-item-details");
+        const menuContainer = document.createElement("div");
+        menuContainer.classList.add("menu-container");
+        const titleElement = document.createElement("h2");
+        titleElement.classList.add("menu-item-title");
+        titleElement.textContent = menuItem.title;
+        const priceElement = document.createElement("span");
+        priceElement.classList.add("menu-item-price");
+        priceElement.textContent = menuItem.price;
+        menuContainer.appendChild(titleElement);
+        menuContainer.appendChild(priceElement);
+        menuItemDetails.appendChild(menuContainer);
+
+        const descriptionElement = document.createElement("p");
+        descriptionElement.classList.add("menu-item-description");
+        descriptionElement.textContent = menuItem.description;
+        menuItemDetails.appendChild(descriptionElement);
+
+        menuItemElement.appendChild(menuItemDetails);
+
+        coffeeMenuContainer.appendChild(menuItemElement);
+      });
+    })
+    .catch((error) => {
+      console.log("Error loading beverage menu:", error);
+    });
+}
+
+loadBeverageMenu();
+
+// Funktion, um die Desssertsorten JSON Datei zu laden
+function loadDessertMenu() {
+  fetch("json/dessert-menu.json")
+    .then((response) => response.json())
+    .then((data) => {
+      const coffeeMenuContainer = document.getElementById("dessert");
+
+      data.menuItems.forEach((menuItem) => {
+        const menuItemElement = document.createElement("div");
+        menuItemElement.classList.add("menu-item");
+
+        const menuItemImage = document.createElement("div");
+        menuItemImage.classList.add("menu-item-image");
+        const img = document.createElement("img");
+        img.src = menuItem.image;
+        img.alt = menuItem.title;
+        menuItemImage.appendChild(img);
+        menuItemElement.appendChild(menuItemImage);
+
+        const menuItemDetails = document.createElement("div");
+        menuItemDetails.classList.add("menu-item-details");
+        const menuContainer = document.createElement("div");
+        menuContainer.classList.add("menu-container");
+        const titleElement = document.createElement("h2");
+        titleElement.classList.add("menu-item-title");
+        titleElement.textContent = menuItem.title;
+        const priceElement = document.createElement("span");
+        priceElement.classList.add("menu-item-price");
+        priceElement.textContent = menuItem.price;
+        menuContainer.appendChild(titleElement);
+        menuContainer.appendChild(priceElement);
+        menuItemDetails.appendChild(menuContainer);
+
+        const descriptionElement = document.createElement("p");
+        descriptionElement.classList.add("menu-item-description");
+        descriptionElement.textContent = menuItem.description;
+        menuItemDetails.appendChild(descriptionElement);
+
+        menuItemElement.appendChild(menuItemDetails);
+
+        coffeeMenuContainer.appendChild(menuItemElement);
+      });
+    })
+    .catch((error) => {
+      console.log("Error loading dessert menu:", error);
+    });
+}
+
+loadDessertMenu();

@@ -1,0 +1,52 @@
+{
+    "menuItems": [
+      {
+        "title": "Panna Cotta",
+        "price": "$6",
+        "description": "Silky and jiggly delight, topped with a sweet berry compote",
+        "image": "https://allourway.com/wp-content/uploads/2022/01/Strawberry-Panna-Cotta-24-copy.jpg-1200-x-1200.jpg"
+      },
+      {
+        "title": "Chocolate Cake",
+        "price": "$6",
+        "description": "Decadent layers of moist chocolate cake, draped in a velvety chocolate ganache",
+        "image": "https://joyfoodsunshine.com/wp-content/uploads/2020/08/best-chocolate-cake-recipe-from-scratch-8.jpg"
+      },
+      {
+        "title": "Cheesecake",
+        "price": "$6",
+        "description": "Creamy and smooth, with a buttery graham cracker crust",
+        "image": "https://herdgefluester.de/wp-content/uploads/2016/10/New-York-Cheesecake-scaled.jpg"
+      },
+      {
+        "title": "Apple Pie",
+        "price": "$5",
+        "description": "Flaky crust filled with warm cinnamon-spiced apples",
+        "image": "https://kristineskitchenblog.com/wp-content/uploads/2021/04/apple-pie-1200-square-592-2.jpg"
+      },
+      {
+        "title": "Tiramisu",
+        "price": "$7",
+        "description": "Layers of espresso-soaked ladyfingers and mascarpone cream, dusted with cocoa powder",
+        "image": "https://image.brigitte.de/13108422/t/CY/v2/w1440/r1/-/tiramisu-aus-dem-thermomix.jpg"
+      },
+      {
+        "title": "Carrot Cake",
+        "price": "$6",
+        "description": "Moist and spiced carrot cake with a generous slathering of cream cheese frosting",
+        "image": "https://sugarspunrun.com/wp-content/uploads/2022/02/The-Best-Carrot-Cake-Recipe-1-of-1-4.jpg"
+      },
+      {
+        "title": "Blueberry Muffin",
+        "price": "$3",
+        "description": "Fluffy and bursting with juicy blueberries, the perfect treat for a merry morning",
+        "image": "https://sugarspunrun.com/wp-content/uploads/2021/05/Best-Blueberry-Muffins-Recipe-1-of-1.jpg"
+      },
+      {
+        "title": "Belgian Waffle",
+        "price": "$5",
+        "description": "Golden and crispy waffle",
+        "image": "https://www.savoringthegood.com/wp-content/uploads/2022/02/Belgian-Waffle-Recipe-square-image.jpg"
+      }
+    ]
+}

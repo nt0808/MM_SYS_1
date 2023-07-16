@@ -1,0 +1,40 @@
+{
+    "menuItems": [
+      {
+        "title": "Still or Carbonated Water",
+        "price": "$2",
+        "description": "Quench your thirst with a refreshing choice of still or bubbly water",
+        "image": "https://us.123rf.com/450wm/aquapictures/aquapictures1606/aquapictures160601010/58129225-nahaufnahme-auf-mineralwasser-im-glas-ein-restaurant-hintergrund-gie%C3%9Fen.jpg"
+      },
+      {
+        "title": "Iced Strawberry Lemonade",
+        "price": "$4",
+        "description": "Delightful fusion of juicy strawberries and tangy lemon",
+        "image": "https://www.acouplecooks.com/wp-content/uploads/2021/06/Strawberry-Lemonade-017s.jpg"
+      },
+      {
+        "title": "Watermelon Mint Cooler",
+        "price": "$5",
+        "description": "Oasis of juicy watermelon infused with cool mint",
+        "image": "https://www.rotinrice.com/wp-content/uploads/2015/08/IMG_6826.jpg"
+      },
+      {
+        "title": "Blueberry Lavender Iced Tea",
+        "price": "$4",
+        "description": "Blend of sweet blueberries and fragrant lavender",
+        "image": "https://www.regainyoursparkle.com/wp-content/uploads/2022/10/homemade-blueberry-iced-tea-500x500.jpg"
+      },
+      {
+        "title": "Pineapple Coconut Smoothie",
+        "price": "$6",
+        "description": "Blend of luscious pineapple and creamy coconut",
+        "image": "https://delightfulemade.com/wp-content/uploads/2022/01/Pina-colada-smoothie-hz1-480x480.jpg"
+      },
+      {
+        "title": "Strawberry Hibiscus Sparkling Water",
+        "price": "$3",
+        "description": "Fizzy and merry concoction of tangy strawberries and floral hibiscus",
+        "image": "https://craftingmyhome.com/wp-content/uploads/2021/05/Strawberry-Hibiscus-Sparkling-Water-1.jpg"
+      }
+    ]
+}
