@@ -1,5 +1,5 @@
 // Array von den Bildern, die für die Funktion changeBackgroundImage angewendet werden
-var images2 = [
+var images = [
   "img/café.png",
   "img/caféclosedeyes.png",
   "img/café.png",
@@ -8,15 +8,17 @@ var images2 = [
   "img/café.png",
 ];
 
+var backgroundContainer = document.querySelector(".background-container");
+
 // Funktion, um das Hintergrundbild zufällig mit Delay und Pause zu ändern
-function changeBackgroundImage2() {
+function changeBackgroundImage() {
   var randomIndex = Math.floor(Math.random() * images.length);
   var randomImage = images[randomIndex];
   backgroundContainer.style.backgroundImage = "url(" + randomImage + ")";
 }
 
 // Funktion aufgerufen, damit das erste Hintergrundbild sofort aufgerufen wird
-changeBackgroundImage2();
+changeBackgroundImage();
 
 // Intervall, in dem sich das Hintergrundbild ändert (2000 ms)
 setInterval(changeBackgroundImage, 2000);
