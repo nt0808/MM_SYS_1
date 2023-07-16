@@ -1,32 +1,35 @@
+// Array von den Bildern, die für die Funktion changeBackgroundImage angewendet werden
 var images = [
-  "café.png",
-  "caféclosedeyes.png",
-  "café.png",
-  "cafésmiling.png",
-  "café.png",
-  "café.png",
+  "img/café.png",
+  "img/caféclosedeyes.png",
+  "img/café.png",
+  "img/cafésmiling.png",
+  "img/café.png",
+  "img/café.png",
 ];
 
 var backgroundContainer = document.querySelector(".background-container");
 
-// Function to change the background image with delay and pause
+// Funktion, um das Hintergrundbild zufällig mit Delay und Pause zu ändern
 function changeBackgroundImage() {
   var randomIndex = Math.floor(Math.random() * images.length);
   var randomImage = images[randomIndex];
   backgroundContainer.style.backgroundImage = "url(" + randomImage + ")";
 }
 
-// Call the function initially to display the first background image immediately
+// Funktion aufgerufen, damit das erste Hintergrundbild sofort aufgerufen wird
 changeBackgroundImage();
 
-// Set interval to change the background image every 5 seconds (5000 milliseconds)
+// Intervall, in dem sich das Hintergrundbild ändert (2000 ms)
 setInterval(changeBackgroundImage, 2000);
 
+// Funktion, um das Pop-Up Menü zu öffnen
 function openMenuPopup(popupId) {
   var popup = document.getElementById(popupId);
   popup.style.display = "block";
 }
 
+// Funktion, um das Pop-Up Menü zu schließen
 function closeMenuPopup(popupId) {
   var popup = document.getElementById(popupId);
   popup.style.display = "none";

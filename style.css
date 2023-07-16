@@ -1,17 +1,17 @@
 /*Einbinden von lokalen Fonts*/
 @font-face {
     font-family: 'Coffee+Tea';
-    src: url('coffee+teademo-Regular.ttf') format('truetype');
+    src: url('font/coffee+teademo-Regular.ttf') format('truetype');
 }
 
 @font-face {
     font-family: 'Love';
-    src: url('Love.ttf') format('truetype');
+    src: url('font/Love.ttf') format('truetype');
 }
 
 @font-face {
     font-family: 'Open Sans';
-    src: url('OpenSans-VariableFont_wdth,wght.ttf') format('truetype');
+    src: url('font/OpenSans-VariableFont_wdth,wght.ttf') format('truetype');
 }
 
 body,
@@ -43,9 +43,11 @@ li {
 }
 
 /*Bilder in den Pop-Ups*/
-.menu-item-image, .item-image {
+.menu-item-image,
+.item-image {
     flex: 0 0 100%;
-    max-width: 120px;
+    max-width: 100px;
+    max-height: 100px;
     margin-right: 40px;
     margin-bottom: 12px;
 }
@@ -63,41 +65,41 @@ li {
     height: auto;
 }
 
-/**/
+/*Div Container für Titel, Beschreibung und Preis von Getränk/Speise*/
 .menu-item-details {
     flex: 1;
 }
 
-/**/
+/*Div Container für Titel und Preis, damit Titel und Preis jeweils einheitlich untereinander stehen*/
 .menu-container {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
-    gap: 100px;
+    gap: 10px;
 }
 
-/**/
+/*Titel der Speise/Getränk*/
 .menu-item-title {
-    font-family: 'Love';
-    font-size: 24px;
+    font-family: 'Coffee+Tea';
+    font-size: 26px;
     margin-bottom: 16px;
 }
 
-/**/
+/*Beschreibung der Speise/Getränk*/
 .menu-item-description {
     font-family: 'Open Sans';
     font-size: 18px;
     margin-bottom: 12px;
 }
 
-/**/
+/*Preis der Speise/Getränk*/
 .menu-item-price {
     font-family: 'Love';
     font-size: 20px;
     font-weight: bold;
     text-align: right;
-} 
+}
 
-/**/
+/*Gestaltung des Pop-Up Menüs*/
 .popup {
     display: none;
     position: absolute;
@@ -126,7 +128,7 @@ li {
     cursor: pointer;
 }
 
-/**/
+/*Hintergrundbild*/
 .background-container {
     position: relative;
     width: 100%;
@@ -135,7 +137,7 @@ li {
     background-size: cover;
 }
 
-/**/
+/*Hovern*/
 .hover-area,
 .hover-area-box {
     position: absolute;
@@ -144,55 +146,55 @@ li {
     transition: filter 0.1s;
 }
 
-/**/
+/*Bei Hovern über Seasonal/Coffee/Tea/Beverage leuchten die Bilder auf*/
 .hover-area:hover {
     cursor: help;
     filter: drop-shadow(0 0 32px rgb(255, 255, 255));
 }
 
-/**/
+/*Bei Hovern über den Namen des Cafés und der Desserts leuchten sie auf*/
 .hover-area-box:hover {
     cursor: help;
     box-shadow: 0 0 28px rgb(230, 139, 139);
 }
 
-/**/
+/*Seasonal Bild eingefügt*/
 .seasonal-hover {
     top: 6%;
     left: 7%;
     width: 10%;
     height: 37%;
-    background-image: url("parfait.png");
+    background-image: url("img/parfait.png");
 }
 
-/**/
+/*Coffee Bild eingefügt*/
 .coffee-hover {
     top: 10%;
     left: 40%;
     width: 12%;
     height: 25%;
-    background-image: url("coffee.png");
+    background-image: url("img/coffee.png");
 }
 
-/**/
+/*Tea Bild eingefügt*/
 .tea-hover {
     top: 14%;
     left: 59%;
     width: 13%;
     height: 20%;
-    background-image: url("tea.png");
+    background-image: url("img/tea.png");
 }
 
-/**/
+/*Beverage Bild eingefügt*/
 .beverage-hover {
     top: 7%;
     left: 79%;
     width: 9%;
     height: 28%;
-    background-image: url("beverage.png");
+    background-image: url("img/beverage.png");
 }
 
-/**/
+/*Über die Desserts ein unsichtbares anklickbares Feld eingefügt*/
 .dessert-hover {
     top: 42%;
     left: 47.7%;
@@ -200,7 +202,7 @@ li {
     height: 56.7%;
 }
 
-/**/
+/*Über den Namen ein unsichtbares anklickbares Feld eingefügt*/
 .name-hover {
     top: 83.2%;
     left: 4.4%;
